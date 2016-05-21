@@ -1,3 +1,4 @@
 [submodule "src/jsqrcode"]
 	path = src/jsqrcode
 	url = https://github.com/diegobill/jsqrcode.git
+	branch = 240146f93eadefd6c8adaf11aeef0f7cb8ffda4a
