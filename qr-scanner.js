@@ -36,7 +36,7 @@ angular.module('qrScanner', ["ng"]).directive('qrScanner', ['$interval', '$windo
         if ($window.localMediaStream) {
           context.drawImage(video, 0, 0, 307,250);
           try {
-            qrcode.decode();
+            jsqrcode.decode();
           } catch(e) {
             scope.ngError({error: e});
           }
@@ -61,7 +61,7 @@ angular.module('qrScanner', ["ng"]).directive('qrScanner', ['$interval', '$windo
         scope.ngVideoError({error: 'Native web camera streaming (getUserMedia) not supported in this browser.'});
       }
 
-      qrcode.callback = function(data) {
+      jsqrcode.callback = function(data) {
         scope.ngSuccess({data: data});
       };
 
