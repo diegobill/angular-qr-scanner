@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "angular": "",
-    "diegobill/jsqrcode": ""
+    "jsqrcode": "diegobill/jsqrcode"
   },
   "main": "qr-scanner.js"
 }
